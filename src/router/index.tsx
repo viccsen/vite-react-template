@@ -1,12 +1,14 @@
 /*
  * @Author: Viccsen
  * @Date: 2023-08-16 11:18:15
- * @LastEditTime: 2023-08-22 16:41:41
+ * @LastEditTime: 2023-08-22 18:36:27
  * @LastEditors: Viccsen
  * @Description:
  */
 import { Suspense } from 'react'
 import type { RouteObject } from 'react-router-dom'
+
+import Loading from '@/components/Loading'
 
 const ProtectedRoute = lazy(() => import('@/pages/layout'))
 const Home = lazy(() => import('@/pages/index'))
@@ -43,7 +45,7 @@ function Routes() {
 
 export default function Router() {
   return (
-    <Suspense fallback={<div>loading....</div>}>
+    <Suspense fallback={<Loading />}>
       <Routes />
     </Suspense>
   )

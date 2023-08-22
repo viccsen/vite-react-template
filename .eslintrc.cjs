@@ -1,7 +1,7 @@
 /*
  * @Author: Viccsen
  * @Date: 2023-08-12 15:05:35
- * @LastEditTime: 2023-08-12 16:46:31
+ * @LastEditTime: 2023-08-16 14:17:09
  * @LastEditors: Viccsen
  * @Description:
  */
@@ -20,6 +20,7 @@ module.exports = {
     'plugin:@typescript-eslint/recommended',
     'plugin:react-hooks/recommended',
     'plugin:prettier/recommended',
+    './.eslintrc-auto-import.json',
   ],
   ignorePatterns: ['dist', '.eslintrc.cjs'],
   parser: '@typescript-eslint/parser',
@@ -67,11 +68,13 @@ module.exports = {
       },
     ],
     'import/first': 'warn',
+    'comma-dangle': ['error', 'always-multiline'],
     'import/newline-after-import': 'warn',
     'import/no-duplicates': 'error',
     'import/no-named-as-default-member': 'off',
     'simple-import-sort/exports': 'warn',
     'react/prop-types': 'off',
+    'react/jsx-no-undef': 'off',
     'react/react-in-jsx-scope': 'off',
     'react-hooks/rules-of-hooks': 'error',
     'react-hooks/exhaustive-deps': 'warn',
@@ -112,4 +115,4 @@ module.exports = {
       },
     ],
   },
-};
+}

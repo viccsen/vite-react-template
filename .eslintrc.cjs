@@ -1,7 +1,7 @@
 /*
  * @Author: Viccsen
  * @Date: 2023-08-12 15:05:35
- * @LastEditTime: 2023-08-16 14:17:09
+ * @LastEditTime: 2023-11-07 18:10:31
  * @LastEditors: Viccsen
  * @Description:
  */
@@ -80,6 +80,7 @@ module.exports = {
     'react-hooks/exhaustive-deps': 'warn',
     '@typescript-eslint/explicit-module-boundary-types': 'off',
     '@typescript-eslint/no-non-null-assertion': 'off',
+    '@typescript-eslint/no-explicit-any': 'off',
     'simple-import-sort/imports': [
       'warn',
       {

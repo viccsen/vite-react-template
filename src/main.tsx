@@ -20,6 +20,8 @@ import 'antd/dist/reset.css'
 
 dayjs.locale('zh-cn')
 
+console.log('nice project!')
+
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>
     <AntConfigProvider locale={zhCN}>
